@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Jersey+25+Charted&family=Noto+Sans+JP:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main{
+  background-color: #1f242d;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 4%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.logo,h5{
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+.logo:hover{
+  color: #0ef;
+}
+
+.header h5{
+  font-weight: 600;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  color: white;
+}
+.header h5:hover{
+  color: #0ef;
+}
+
+.navbar a{
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #0ef;
+}
+
+
+.home-img img{
+  max-width: 380px;
+  height: 40vh;
+  margin-top: 80px;
+  border-radius: 30px; 
+  transition: .3s;
+  margin-right: -20px;
+  animation: zoomIn 1s ease forwards,
+  floatImage 4s ease-in-out infinite;
+  animation-delay: 2s 3s ;
+}
+
+.home-img img:hover{
+  border: none;
+  box-shadow: 5px 5px 5px lightblue;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  animation: sildeBottom 1s ease forwards;
+  animation-delay: .7s;
+}
+
+.home-content h3 span{
+  color: #0ef;
+}
+
+.home-content p{
+  font-size: 16px;
+  color: white;
+  text-align: justify;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  margin: 3px 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 7px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  transition: .5s ease;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.social-media a :hover{
+  background: #0ef;
+  color: #1f242d;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.btn h6{
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  box-shadow: 0 0 5px #0ef;
+  color: #1f242d;
+  margin: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+/* css education */
+#edu div{
+ padding: 10px;
+ text-align: center;
+}
+#edu div h1,p{
+  color: white;
+}
+#edu div ul{
+  margin: 10px;
+  margin-top: 35px;
+  border: 3px solid blanchedalmond;
+  border-radius: 8px;
+}
+#edu div ul li{
+  text-align: center;
+}
+#edu div ul p{
+  color: black;
+  text-align: justify;
+  padding: 15px;
+}
+.btechbg{
+  background-color:  rgb(159, 228, 255);
+  padding: 10px;
+}
+.dipbg{
+  background-color: white;
+  padding: 10px;
+}
+.sscbg{
+  background-color: rgb(159, 228, 255);
+  padding: 10px;
+}
+.btechbg:hover{
+ background:url("Assets/text.jpg");
+ background-size: cover;
+ color: white;
+}
+.dipbg:hover{
+ background:url("Assets/text.jpg");
+ background-size: cover;
+ color: white;
+}
+.sscbg:hover{
+ background:url("Assets/text.jpg");
+ background-size: cover;
+ color: white;
+}
+
+
+.eduimg img{
+  width: 400px;
+  transform: translateY(40%);
+  border-radius: 100px;
+}
+.eduimg img:hover{
+  box-shadow: 5px 10px 5px skyblue;
+}
+
+/* css experience  */
+#expp{
+  margin-top: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+#expp li p{
+  color: black;
+  text-align: justify ;
+  padding: 5px;
+}
+#expp h1{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+}
+.expimg img{
+  width: 450px;
+  height: 55vh;
+  /* padding: 10px; */
+  margin-top: 150px;
+  border-radius: 30px;
+  margin-left: 80px;
+}
+.expimg img:hover{
+  box-shadow: 5px 10px 10px skyblue;
+}
+
+
+#box div{
+  width: 100%;
+  margin-top: 70px;
+  border: 2px solid white;
+  padding: 20px;
+  background-color: rgb(4, 39, 85);
+  color: black;
+}
+#box div h1{
+  color: white;
+  padding: 20px;
+}
+#box div ul li{
+  padding: 5px;
+  color: white;
+  display: inline;
+  font-size: medium;
+  font-weight: 500;
+}
+
+#box div:hover{
+  background-color: rgb(11, 31, 58);
+  background-size: cover;
+}
+.project{
+  padding: 40px;
+  background-color: skyblue!important;
+}
+.project:hover{
+  background: url("Assets/exp2.jpg");
+  background-size: cover;
+}
+.project h1{
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.project ul{
+  width: 80%;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 40px;
+  margin-left: 115px;
+}
+.project ul:hover{
+  background-color: white ;
+  color: black;
+  opacity: 1;
+}
+
+.footer{
+  padding: 30px;
+  text-align: center;
+  background:url("Assets/nbg.jpg");
+  background-size: cover;
+}
+
+.footer p{
+  color: black;
+  font-weight: 600;
+}
+
+
+
+
+/* keyframe animation */
+@keyframes slideRight{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes sildeBottom{
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-24px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+/* media query start here */
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+  
+  .header {
+    float: left;
+  }
+  .home{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+
+  .home-img img {
+   max-width: 290px;
+   height: 30vh;
+   margin-top: 200px;
+  }
+  .home-content{
+    width: 100%;
+  }
+  .eduimg img {
+    width: 310px;
+    transform: translateY(85%);
+    border-radius: 100px;
+  }
+  #expp {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+  .expimg img {
+    width: 300px;
+    height: 35vh;
+    margin-left: 30px;
+  }
+  .project ul {
+    margin-left: 80px;
+  }
+  .header h5{
+    font-size: medium;
+    font-weight: 600;
+  }
+  
+}
+
+@media screen and (min-width: 375px) and (max-width:667px){
+  .home-img img {
+    max-width: 329px;
+    height: 30vh;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+  .home-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .home-content h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .home-content{
+    margin-top: 20px;
+  }
+  .btnhome a{
+    display: none;
+  }
+
+  .home-img img{
+    margin-top: 5px;
+  }
+  .eduimg img {
+    width: 330px;
+    margin: 10px;
+    margin-bottom: 25px;
+    transform: translateY(5%);
+    border-radius: 100px;
+}
+  #expp{
+    margin-top: 5px;
+    margin-left: 1px;
+  }
+
+  .expimg img {
+    width: 300px;
+    height: 35vh;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  #box div{
+    width: 85%;
+    margin-left: 25px;
+  }
+  .project ul {
+    margin-left: none;
+}
+  .header h5{
+    font-size: small;
+    font-weight: 600;
+  }
+  .logo, h5 {
+    font-size: 20px;
+    padding: 5px;
+}
+}
+
+@media screen and (min-width: 360px) and (max-width:740px){
+  .header h5{
+   display: none;
+  }
+  .home-img img {
+    max-width: 335px;
+    height: 35vh;
+    margin-top: 10px;
+  }
+  .eduimg img {
+    width: 300px;
+    transform: translateY(5%);
+    border-radius: 100px;
+    margin-bottom: 35px;
+}
+  .expimg img {
+    width: 300px;
+    height: 30vh;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .project ul {
+    margin-left: 35px;
+  }
+}
